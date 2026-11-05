@@ -1,0 +1,38 @@
+{
+    "version": "0.2.0",
+    "description": "Database client with reviewed, audited changes to production",
+    "homepage": "https://tcuber11.github.io/dataforge-site/",
+    "license": {
+        "identifier": "Proprietary",
+        "url": "https://tcuber11.github.io/dataforge-site/"
+    },
+    "notes": "DataForge keeps its data in %LOCALAPPDATA%\\dev.dataforge.desktop; uninstalling keeps it.",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/tcuber11/dataforge-site/releases/download/v0.2.0/DataForge_0.2.0_x64-setup.exe",
+            "hash": "8b37ffe40bbcd4228bd45cff715197da55eee83f8b81f3e6c8d5b72777eae2a7"
+        }
+    },
+    "installer": {
+        "args": ["/S", "/D=$dir"]
+    },
+    "uninstaller": {
+        "file": "uninstall.exe",
+        "args": ["/S"]
+    },
+    "shortcuts": [["DataForge.exe", "DataForge"]],
+    "checkver": {
+        "github": "https://github.com/tcuber11/dataforge-site"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/tcuber11/dataforge-site/releases/download/v$version/DataForge_$version_x64-setup.exe"
+            }
+        },
+        "hash": {
+            "url": "https://github.com/tcuber11/dataforge-site/releases/download/v$version/SHA256SUMS.txt",
+            "regex": "$sha256\\s+(?:\\S*/)?DataForge_$version_x64-setup\\.exe"
+        }
+    }
+}
