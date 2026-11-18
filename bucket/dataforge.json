@@ -1,5 +1,5 @@
 {
-    "version": "0.2.16",
+    "version": "0.2.17",
     "description": "Database client with reviewed, audited changes to production",
     "homepage": "https://tcuber11.github.io/dataforge-site/",
     "license": {
@@ -9,8 +9,8 @@
     "notes": "DataForge keeps its data in %LOCALAPPDATA%\\dev.dataforge.desktop; uninstalling keeps it.",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/tcuber11/dataforge-site/releases/download/v0.2.16/DataForge_0.2.16_x64-setup.exe",
-            "hash": "c4e1c94119b2a369044b3d6d1ae122ba47c5a6239c2aed5e3b6a9269efc8c448"
+            "url": "https://github.com/tcuber11/dataforge-site/releases/download/v0.2.17/DataForge_0.2.17_x64-setup.exe",
+            "hash": "9bd7f244e1fca0be3dc345e9ab7e24a77552424692138a81c7e0fb414c0cff8e"
         }
     },
     "installer": {
